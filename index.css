@@ -1,0 +1,113 @@
+@import url(./reset.css);
+:root{
+    --Brightorange: hsl(31, 77%, 52%);
+    --Darkcyan: hsl(184, 100%, 22%);
+    --Verydarkcyan: hsl(179, 100%, 13%);
+
+    --Transparentwhiteparagraphs: hsla(0, 0%, 100%, 0.75);
+    --Verylightgraybackgroundheadingsbuttons: hsl(0, 0%, 95%);
+}
+@font-face {
+    font-family: 'bigs';
+    src: url(./fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'lexend';
+    src: url(./fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+html,body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Verylightgraybackgroundheadingsbuttons);
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Verylightgraybackgroundheadingsbuttons);
+    font-family: 'lexend';
+    display: flex;
+    justify-content: center;
+}
+.content{
+    display: flex;
+    max-width: 60rem;
+    margin: auto;
+    h1{
+        padding: 2rem 0 0 0;
+        font-family:'bigs';
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 2.4rem;
+    }
+}
+.sedans,.suvs,.luxury{
+    padding: 3rem;
+    font-family: 'lexend';
+    font-size: 1rem;
+    font-weight: 400;
+    max-height: 40rem;
+    p{
+        color: var(--Transparentwhiteparagraphs);
+        padding: 1.5rem 0 5rem;
+    }
+    button{
+        border-radius: 30px;
+        padding: 0.8rem 2rem;
+        border: 2px solid white;
+    }
+}
+.sedans{
+    border-radius: 10px 0 0 10px;
+    background-color: var(--Brightorange);
+    button{
+        color: var(--Brightorange);
+    }
+}
+.suvs{
+    background-color: var(--Darkcyan);
+    button{
+        color:var(--Darkcyan);
+    }
+}
+.luxury{
+    background-color: var(--Verydarkcyan);
+    color: var(--Verydarkcyan);
+    border-radius: 0px 10px 10px 0;
+}
+.sedans button:hover,.suvs button:hover,.luxury button:hover{
+    background-color: transparent;
+    color: white;
+}
+@media screen and (max-width: 575px) {
+    @import url(./reset.css);
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+    .sedans,.suvs,.luxury{
+    }
+    .sedans{
+        border-radius: 10px 10px 0 0;
+    }
+    .suvs{
+    }
+    .luxury{
+        border-radius: 0 0 10px 10px;     
+    }
+}
+.attribution{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
