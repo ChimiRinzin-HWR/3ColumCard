@@ -93,21 +93,30 @@ main{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1rem;
+        padding: 3rem 1rem;
     }
     .sedans,.suvs,.luxury{
+        font-size: 1.2rem;
+        padding: 5rem;
+        p{
+            padding: 1.8rem 0 2rem;
+        }
+        img{
+            width:6rem;
+        }
+        h1{
+            font-size: 3rem;
+        }
     }
     .sedans{
         border-radius: 10px 10px 0 0;
-    }
-    .suvs{
     }
     .luxury{
         border-radius: 0 0 10px 10px;     
     }
 }
-.attribution{
+footer{
     position: absolute;
     top: 0;
-    left: 0;
+
 }
